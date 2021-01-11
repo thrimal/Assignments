@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sticky Position</title>
+    <style>
+        section{
+        width : 100%;
+        height : 100vh;
+        }
+        section:nth-child(1){
+        background: red;
+        }section:nth-child(2){
+        background: green;
+        }section:nth-child(3){
+        background: blue;
+        }section:nth-child(4){
+        background: yellow;
+        }
+        section:nth-child(1)>article{
+        width : 100%;
+        height : 80px;
+        background : purple;
+        position : sticky;
+        top :0;
+        }
+        section:nth-child(2)>article{
+        width : 100%;
+        height : 80px;
+        background : white;
+        position : sticky;
+        top :0;
+        }
+        section:nth-child(3)>article{
+        width : 100%;
+        height : 80px;
+        background : orange;
+        position : sticky;
+        top :0;
+        }
+        section:nth-child(4)>article{
+        width : 100%;
+        height : 80px;
+        background : pink;
+        position : sticky;
+        top :0;
+        }
+        section>h1{
+            margin: auto;
+            color: black;
+            text-align: center;
+            padding-top: 200px;
+            font-size: 50px;
+            font-weight: bolder;
+        }
+        section>article>h1{
+        margin: auto;
+            color: black;
+            text-align: center;
+            padding-top: 20px;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <article>
+        <h1>Card 1</h1>
+    </article>
+    <h1>Hellow</h1>
+</section>
+<section>
+    <article>
+        <h1>Card 2</h1>
+    </article>
+    <h1>How</h1>
+</section>
+<section>
+    <article>
+        <h1>Card 3</h1>
+    </article>
+    <h1>Are</h1>
+</section>
+<section>
+    <article>
+        <h1>Card 4</h1>
+    </article>
+    <h1>You</h1>
+</section>
+</body>
+</html>
