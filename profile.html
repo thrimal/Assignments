@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns:text-align="http://www.w3.org/1999/xhtml"
+      xmlns:transform="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>My Profile</title>
@@ -16,8 +17,9 @@
         border: 2px solid black;
         border-radius: 20px;
         }
-        h1{
+        section:nth-child(1)>nav>h1{
         color: white;
+            font-size: x-large;
         text-align: center;
         transform: translate(0%, 40%);
         }
@@ -25,7 +27,7 @@
         width : 100%;
         height : 100vh;
         border-radius: 20px;
-        opacity:0.9;
+        opacity:0.7;
         position: absolute;
         }
         section:nth-child(1)>aside{
@@ -56,11 +58,13 @@
         top:0;
         right:10px;
         margin-top: 10px;
+        font-style: italic;
         }
         section:nth-child(1)>section>ul>li{
-        font-size:large;
+        font-size:larger;
         display: inline;
         padding: 10px;
+            font-family: "Arial Rounded MT Bold";
         }
         section:nth-child(1)>section{
         margin: auto;
@@ -68,17 +72,18 @@
         height: 50px;
         position: fixed;
         top: 0;
-        z-index: 2;
+        z-index: 5;
         border:2px solid black;
         }
-<!--        section:nth-child(1)>div{-->
-<!--        width: 25%;-->
-<!--        height: 50px;-->
-<!--        position: sticky;-->
-<!--        top: 10cm;-->
-<!--        background: black;-->
-<!--        border-radius: 20px;-->
-<!--        }-->
+
+        section:nth-child(1) > nav {
+            width: 25%;
+            height: 50px;
+            position: sticky;
+            top: 10cm;
+            background: black;
+            border-radius: 20px;
+        }
 
         section:nth-child(4){
         background: #80F3F3;
@@ -86,10 +91,88 @@
         section:nth-child(6){
         background: #80F3F3;
         }
-        body>section>ul{
-        position: absolute;
-        top: 10cm;
-        left:3cm;
+        section:nth-child(1)>img>area{
+            position :absolute;
+        }
+        section:nth-child(1)>div{
+            position: absolute;
+            left: 6.5cm;
+            top: 7.5cm;
+        }
+        section:nth-child(1)>div>ul>li{
+            font-size: x-large;
+            padding: 30px;
+            display: inline;
+        }
+        section:nth-child(1)>ul{
+            font-size: larger;
+            position: absolute;
+            top: 11.5cm;
+            left:3cm;
+        }
+        section:nth-child(1)>img{
+            z-index: -1
+        }
+        section:nth-child(1)>h1{
+            width: 8cm;
+            position: absolute;
+            top: 3cm;
+            left: 22cm;
+        }
+        /*---------------------------------------first page------------*/
+        section:nth-child(2)>nav{
+            width: 25%;
+            height: 50px;
+            position: sticky;
+            top: 1.5cm;
+            background: black;
+            border-radius: 20px;
+            border: none;
+        }
+        section:nth-child(2)>nav>h1{
+            color: white;
+            font-size:  x-large;
+            text-align: center;
+            transform: translate(0%, 40%);
+            margin: 0;
+        }
+        section:nth-child(2)>p{
+            width: 30cm;
+            position: absolute;
+            top: 1.2cm;
+            left: 3cm;
+            font-size: large;
+        }
+        section:nth-child(2)>section{
+            width: 60%;
+            height: 60vh;
+            position: absolute;
+            margin: auto;
+            top: 5cm;
+            left:0;
+            right : 0;
+            background : #EFF9B4;
+        }
+        section:nth-child(2)>section>ul{
+            position : absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            max-height: 5cm;
+        }
+        section:nth-child(2)>section>ul>li{
+            padding: 10px;
+        }
+        section:nth-child(2)>section>h1{
+            font-size: larger;
+            position: absolute;
+            top: 0;
+            left: 1cm;
+        }
+        section:nth-child(2)>section>ul{
+            
         }
     </style>
 </head>
@@ -111,9 +194,9 @@
         <li>Projects</li>
     </ul>
     </section>
-    <div>
-        <h1>Personal Detail :</h1>
-    </div>
+    <nav>
+        <h1>Personal Details :</h1>
+    </nav>
     <ul>
         <li>Name: Thrimal Avishka</li>
         <li>Birthday: 1999.05.03</li>
@@ -122,10 +205,37 @@
         <li>Contact: 0769641477</li>
         <li>Email: thrimalavishka99@gmail.com</li>
     </ul>
+    <div>
+    <ul>
+        <li>Follow me On :</li>
+        <li><img src="asserts/icons8_whatsapp_48px.png"></li>
+        <li><img src="asserts/icons8_facebook_48px.png"></li>
+        <li><img src="asserts/icons8_instagram_48px.png"></li>
+        <li><img src="asserts/icons8_twitter_squared_48px.png"></li>
+        <li><img src="asserts/icons8_Facebook_Messenger_48px.png"></li>
+    </ul>
+    </div>
+    <h1>Hellow I'm Thrimal Avishka!
+        Software Engineer.</h1>
 </section>
 
 <section>
     <img src="asserts/IMG-20201104-WA0012.jpg">
+    <nav>
+        <h1>About Me :</h1>
+    </nav>
+    <p>Hi i'm Thrimal Avishka, I studied Mahinda College Galle,SriLanka.Now i currently following GDSE course at IJSE(Institute Java Software Engineering) at galle branch. </p>
+    <section>
+        <h1>Interested :</h1>
+        <ul>
+            <li>Programming <img src=""></li>
+            <li>Listning Music <img src=""></li>
+            <li>Watching Movies <img src=""></li>
+            <li>Gaming <img src=""></li>
+            <li>Traveling <img src=""></li>
+            <li>Photography <img src=""></li>
+        </ul>
+    </section>
 </section>
 
 <section>
