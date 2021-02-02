@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin-top: 0;
+            overflow: hidden;
+            margin-left: 0;
+        }
+        section{
+            position: absolute;
+            animation: slider;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-delay: 2s;
+        }
+        img{
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+        }
+        img:nth-child(1){
+            margin-left: 0vw;
+        }
+        img:nth-child(2){
+            margin-left: 100vw;
+        }
+        img:nth-child(3){
+            margin-left: 200vw;
+        }
+        img:nth-child(4){
+            margin-left: 300vw;
+        }
+        img:nth-child(5){
+            margin-left: 400vw;
+        }
+
+        @keyframes slider{
+            0%{
+                margin-left: 0vw;
+            }
+            25%{
+                margin-left: -100vw;
+            }
+            50%{
+                margin-left: -200vw;
+            }
+            75%{
+                margin-left: -300vw;
+            }
+            100%{
+                margin-left: -400vw;
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+    <img src="asserts/greg-rakozy-38802-unsplash.jpg">
+    <img src="asserts/ian-schneider-108618-unsplash.jpg">
+    <img src="asserts/landscape-ultra-hd-animal-wallpaper-4k.jpg">
+    <img src="asserts/No-Mans-Sky-4-K-Wallpaper.jpg">
+    <img src="asserts/zombies_fantasy_art_89548_1920x1080.jpg">
+</section>
+</body>
+</html>
