@@ -18,13 +18,6 @@
             border-radius: 20px;
         }
 
-        section:nth-child(1) > nav > h1 {
-            color: white;
-            font-size: x-large;
-            text-align: center;
-            transform: translate(0%, 30%);
-        }
-
         section > img {
             width: 100%;
             height: 100vh;
@@ -32,6 +25,16 @@
             opacity: 0.7;
             position: absolute;
         }
+
+        /*---------------------------------------first page------------*/
+        section:nth-child(1) > nav > h1 {
+            color: white;
+            font-size: x-large;
+            text-align: center;
+            transform: translate(0%, 30%);
+        }
+
+
 
         section:nth-child(1) > aside {
             width: 200px;
@@ -139,7 +142,7 @@
             left: 22cm;
         }
 
-        /*---------------------------------------first page------------*/
+        /*---------------------------------------Second page------------*/
         section:nth-child(2) > nav {
             width: 25%;
             height: 40px;
@@ -159,7 +162,7 @@
         }
 
         section:nth-child(2) > p {
-            width: 28cm;
+            width: 30cm;
             position: absolute;
             top: 1.2cm;
             left: 3cm;
@@ -207,6 +210,147 @@
         section:nth-child(2) > section > ul:nth-child(3) {
             position: absolute;
             left: 12cm;
+        }
+
+        /*---------------------------------------Third page------------*/
+
+        section:nth-child(3) > nav {
+            width: 25%;
+            height: 40px;
+            position: sticky;
+            top: 1.5cm;
+            background: black;
+            border-radius: 20px;
+            border: none;
+        }
+
+        section:nth-child(3) > nav > h1 {
+            color: white;
+            font-size: x-large;
+            text-align: center;
+            transform: translate(0%, 30%);
+            margin: 0;
+        }
+
+        section:nth-child(3) > section {
+            width: 80%;
+            height: 70vh;
+            position: absolute;
+            margin: auto;
+            top: 3cm;
+            left: 0;
+            right: 0;
+            background: #EFF9B4;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr);
+
+        }
+
+        section:nth-child(3)>section>div{
+            width: 8cm;
+            height: 20px;
+            border-radius: 20px;
+            border: 1px solid black;
+            background: white;
+            margin-left: 3cm;
+            margin-top: 3cm;
+            z-index: 2;
+        }
+
+        section:nth-child(3)>section>h1{
+            margin-top: 1cm;
+            margin-left: 2cm;
+        }
+
+        section:nth-child(3)>section>div>div{
+            width: 5cm;
+            height: 20px;
+            border-radius: 20px;
+            background: green;
+            z-index: 2;
+        }
+
+        /*---------------------------------------fifth page------------*/
+
+        section:nth-child(5) > nav {
+            width: 25%;
+            height: 40px;
+            position: sticky;
+            top: 1.5cm;
+            background: black;
+            border-radius: 20px;
+            border: none;
+        }
+
+        section:nth-child(5) > nav > h1 {
+            color: white;
+            font-size: x-large;
+            text-align: center;
+            transform: translate(0%, 30%);
+            margin: 0;
+        }
+
+        section:nth-child(5) > section {
+            width: 80%;
+            height: 70vh;
+            position: absolute;
+            margin: auto;
+            top: 3cm;
+            left: 0;
+            right: 0;
+            background: #EFF9B4;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,1fr);
+        }
+
+        section:nth-child(5)>section>div{
+            width: 180px;
+            height: 120px;
+            border-radius: 100%;
+            background: black;
+            z-index: 2;
+            margin-top: 1cm;
+            margin-left: 1cm;
+        }
+        section:nth-child(5)>section>div>img{
+            z-index: 2;
+            margin-left: 1.5cm;
+            margin-top: 0.5cm;
+        }
+        section:nth-child(5)>section>h1{
+            margin-top: 4.5cm;
+            margin-left: 2cm;
+        }
+
+        /*---------------------------------------sixth page------------*/
+        section:nth-child(6) > nav {
+            width: 25%;
+            height: 40px;
+            position: sticky;
+            top: 1.5cm;
+            background: black;
+            border-radius: 20px;
+            border: none;
+        }
+
+        section:nth-child(6) > nav > h1 {
+            color: white;
+            font-size: x-large;
+            text-align: center;
+            transform: translate(0%, 30%);
+            margin: 0;
+        }
+        section:nth-child(6)>area{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,1fr);
+        }
+        section:nth-child(6)>area>div{
+            width: 3cm;
+            height: 4cm;
+            background: mediumpurple;
         }
     </style>
 </head>
@@ -278,15 +422,71 @@
 
 <section>
     <img src="asserts/IMG-20201104-WA0009.jpg">
+    <nav>
+        <h1>Skills :</h1>
+    </nav>
+    <section>
+        <div><div></div></div>
+        <div><div></div></div>
+        <div><div></div></div>
+        <div><div></div></div>
+        <div><div></div></div>
+        <div><div></div></div>
+    </section>
+    <section>
+        <h1>Java<img src="asserts/icons8_java_48px.png"></h1>
+        <h1>HTML<img src="asserts/icons8_html_5_48px.png"></h1>
+        <h1>MySql<img src="asserts/icons8_mysql_50px.png"></h1>
+        <h1>CSS<img src="asserts/icons8_css3_48px_1.png"></h1>
+        <h1>Python<img src="asserts/icons8_python_48px.png"></h1>
+        <h1>Java Script<img src="asserts/icons8_javascript_48px.png"></h1>
+    </section>
 </section>
 
 <section></section>
 
 <section>
     <img src="asserts/IMG-20201104-WA0018.jpg">
+    <nav>
+        <h1>Assignments :</h1>
+    </nav>
+    <section>
+        <div><img src="asserts/icons8_audit_64px.png"></div>
+        <div><img src="asserts/icons8_audit_64px.png"></div>
+        <div><img src="asserts/icons8_audit_64px.png"></div>
+        <div><img src="asserts/icons8_audit_64px.png"></div>
+        <div><img src="asserts/icons8_audit_64px.png"></div>
+        <div><img src="asserts/icons8_audit_64px.png"></div>
+        <div><img src="asserts/icons8_audit_64px.png"></div>
+        <div><img src="asserts/icons8_audit_64px.png"></div>
+    </section>
+    <section>
+        <h1>Assignment 1</h1>
+        <h1>Assignment 2</h1>
+        <h1>Assignment 3</h1>
+        <h1>Assignment 4</h1>
+        <h1>Assignment 5</h1>
+        <h1>Assignment 6</h1>
+        <h1>Assignment 7</h1>
+        <h1>Assignment 8</h1>
+    </section>
 </section>
 
-<section></section>
+<section>
+    <nav>
+        <h1>Projects :</h1>
+    </nav>
+    <area>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </area>
+</section>
 
 </body>
 </html>
