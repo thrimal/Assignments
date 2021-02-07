@@ -99,11 +99,14 @@
         }
 
         section:nth-child(4) {
-            background: #80F3F3;
+            /*background: #80F3F3;*/
+            background: linear-gradient(white,#80F3F3);
         }
 
         section:nth-child(6) {
-            background: #80F3F3;
+            /*background: #80F3F3;*/
+            background: linear-gradient(white,#80F3F3);
+            height: 14cm;
         }
 
         section:nth-child(1) > img > area {
@@ -177,7 +180,8 @@
             top: 5cm;
             left: 0;
             right: 0;
-            background: #EFF9B4;
+            /*background: #EFF9B4;*/
+            background: linear-gradient(white,#EFF9B4);
         }
 
         section:nth-child(2) > section > ul {
@@ -240,7 +244,7 @@
             top: 3cm;
             left: 0;
             right: 0;
-            background: #EFF9B4;
+            background: linear-gradient(white,#EFF9B4);
             display: grid;
             grid-template-columns: repeat(2,1fr);
             grid-template-rows: repeat(3,1fr);
@@ -299,7 +303,7 @@
             top: 3cm;
             left: 0;
             right: 0;
-            background: #EFF9B4;
+            background: linear-gradient(white,#EFF9B4);
             display: grid;
             grid-template-columns: repeat(4,1fr);
             grid-template-rows: repeat(2,1fr);
@@ -342,15 +346,31 @@
             transform: translate(0%, 30%);
             margin: 0;
         }
-        section:nth-child(6)>area{
+        section:nth-child(6)>aside{
             display: grid;
             grid-template-columns: repeat(4,1fr);
             grid-template-rows: repeat(2,1fr);
         }
-        section:nth-child(6)>area>div{
-            width: 3cm;
+        section:nth-child(6)>aside>div{
+            width: 5cm;
             height: 4cm;
-            background: mediumpurple;
+            background: linear-gradient(white,#BF69B6);
+            margin-top: 2cm;
+            margin-left: 2cm;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        section:nth-child(6)>aside>div>div{
+            width: 5cm;
+            height: 1cm;
+            background: black;
+        }
+        section:nth-child(6)>aside>div>div>h1{
+            margin-top: 1.5cm;
+            margin-left: 1.5cm;
+            color: wheat;
+            font-family: Dubai;
+            z-index: 2;
         }
     </style>
 </head>
@@ -476,16 +496,16 @@
     <nav>
         <h1>Projects :</h1>
     </nav>
-    <area>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </area>
+    <aside>
+        <div><div><h1>Project 1</h1></div></div>
+        <div><div><h1>Project 2</h1></div></div>
+        <div><div><h1>Project 3</h1></div></div>
+        <div><div><h1>Project 4</h1></div></div>
+        <div><div><h1>Project 5</h1></div></div>
+        <div><div><h1>Project 6</h1></div></div>
+        <div><div><h1>Project 7</h1></div></div>
+        <div><div><h1>Project 8</h1></div></div>
+    </aside>
 </section>
 
 </body>
